@@ -1,0 +1,37 @@
+<odoo>
+	<record id="crm_new_fields" model="ir.ui.view">
+	    <field name="name">crm.lead.form</field>
+	    <field name="model">crm.lead</field>
+	    <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+	    <field name="arch" type="xml">
+	        <data>
+				<xpath expr="//group[@name='lead_info']" position="after">	               
+	                <group>
+		                <label for="floor_plan" string="Select Floor Plan"/>
+	                        <p><field name="floor_plan"  /></p>
+		                <label for="room" string="Select Room"/>
+	                        <p><field name="room" /></p>
+	                </group>
+	            </xpath>
+	        </data>
+	    </field>
+	</record>
+	<!-- <record id="sale_order_custom_crm" model="ir.ui.view">
+	    <field name="name">sale.order.custom.crm</field>
+	    <field name="model">sale.order</field>
+	    <field name="inherit_id" ref="sale.view_order_form"/>
+	    <field name="arch" type="xml">
+	        <data>
+	            <xpath  expr="//sheet//field[@name='date_order']" position="after">
+	                <group>
+	                    <label for="floor_plan" string="Select Floor Plan"/>
+	                    <p><field name="floor_plan" /></p>
+	                    <label for="room" string="Select Room"/>
+	                    <p><field name="room" /></p>
+	                </group>
+	            </xpath>
+	        </data>
+	    </field>
+	</record> -->
+
+</odoo>

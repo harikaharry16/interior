@@ -1,0 +1,136 @@
+<odoo>
+
+
+    <record id="design_views" model="website.menu">
+        <field name="name">Designs Enquiry</field>
+        <field name="url">/design</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">80</field>
+    </record>
+
+    <template id="design_enquiry_form_template" name="design enquiry">
+        <t t-call="website.layout">
+            <t t-set="title">Interior Designing</t>
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/design"><i class="fa fa-home"/></a></li>
+
+                </ol>
+            </nav> -->
+        
+           
+
+            <form role="form" action="/submit_design" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="design-container">
+
+                    <div class="elite" >
+                        <p>Elite Interior</p>
+                    </div>
+                    
+                    <div class="just-form">
+                        <div class="full-form" >
+                           
+                            
+                            <div class="fields-style">
+                                <div class="label-style">
+
+                                    <label for="contact_name">Contact Name:</label>
+                                </div>
+                                <div class="input-style">
+
+                                    <input type="text" id="contact_name" name="contact_name" placeholder="Enter Your Name" required="required" />
+                                </div>
+                            </div>
+                            <div class="fields-style">
+                                <div class="label-style">
+
+                                    <label for="phone">Phone:</label>
+                                </div>
+                                <div class="input-style">
+                                    <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number" required="required" />
+                                </div>
+                            </div>
+                            
+                            <div class="fields-style">
+                                <div class="label-style">
+
+                                    <label for="email_from">Email:</label>
+                                </div>
+                                <div class="input-style">
+                                    <input type="text" id="email_from" name="email_from" placeholder="Enter Your Email Address" required="required"/>
+                                </div>
+                            </div>
+                            <div class="fields-style">
+                                <div class="label-style">
+
+                                    <label for="floor_plan">Your Floor Plan:</label>
+                                </div>
+                                <div class="input-style">
+                                    <select id="floor_plan" name="floor_plan" class="select-input" required="required" >
+                                        <option value="">Select your BHK Type</option>
+                                        <option value="1BHK">1 BHK</option>
+                                        <option value="2BHK">2 BHK</option>
+                                        <option value="3BHK">3 BHK</option>
+                                        <option value="4BHK">4 BHK</option>
+                                        <option value="Villa/Farm House">Villa/Farm House</option>
+                                        <option value="Others">Others</option>
+                                                                           
+                                    </select>
+
+                                    
+                                </div>
+
+                            </div>
+                            <div class="fields-style">
+                                <div class="label-style">
+
+                                    <label for="room">Select The Rooms :</label>
+                                </div>
+                                <div class="input-style">
+                                    <select id="room" name="room"  class="select-input" required="required">
+                                        <option value="">Select the rooms</option>
+                                        <option value="End To End Solution">End To End Solution </option>
+                                        <option value="Living Room ">Living Room </option>
+                                        <option value="Kitchen">Kitchen</option>
+                                        <option value="Bedroom">Bedroom</option>
+                                        <option value="Bathroom">Bathroom</option>
+                                        <option value="Dining">Dining</option>
+                                        <option value="Others">Others</option>
+
+                                                                           
+                                    </select>
+
+                                    
+                                </div>
+
+                            </div>
+                            <div class="enquiry-btn">
+                                <button class="submit-btn" type="submit">Get Free Enquiry</button>
+                            </div>
+                        
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                    
+            </form>
+            
+        </t>
+    </template>
+
+    <template id="design_enquiry_thankyou_template" name="design enquiry thankyou page">
+        <t t-call="website.layout">
+            <t t-set="title">successful</t>
+            <div class="successful-msg">
+                <div class="message">
+                    <h1>"Thank you for contacting Elite Interiors. We will provide you with an estimated cost within 24 hours. We appreciate your interest in our services!"
+                    </h1>
+                </div>
+            </div>
+        </t>
+    </template>
+   
+</odoo>

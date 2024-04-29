@@ -1,0 +1,262 @@
+.design-container{
+    background-image: url("https://images5.alphacoders.com/134/1347174.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw; 
+    height: 100vh; 
+/*    background-attachment: fixed;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.just-form{
+    display:flex;
+    flex-direction: column;
+
+
+    margin:50px;
+
+    
+}
+.full-form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+/*    align-items: flex-start;*/
+    border-radius: 20px;
+    padding:10px;
+    background-color: white;
+    margin-bottom:20px;
+    margin-top:10px;
+    margin:50px;
+   
+}
+
+
+
+
+
+.fields-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+.label-style{
+    width:200px;
+
+    margin-right:5px;
+    font-size: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+
+}
+.input-style{
+    height:60px;
+    width:200px;
+    font-size: 15px;
+    margin-left:8px;
+    margin-right:28px;
+}
+.select-input{
+    height:35px;
+    width:220px;
+    background-color:#e1e7f0;
+}
+
+.enquiry-btn{
+    margin-top:45px;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+.submit-btn{
+    background-color: #e31b2c;
+    color:white;
+    border-radius: 5px;
+    height:45px;
+    padding:10px;
+
+}
+.successful-msg{
+    color:white;
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2023/09/04/Black-Luxury-Interior-Background-Graphics-78516626-1-1-580x387.jpg");
+    background-size: cover;
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+/*    align-items: center;*/
+    
+}
+.message{
+    height:150px;
+    margin:20px;
+    width:750px;
+    font-size:25px;
+    font-weight: bold;
+    padding:35px;
+}
+.elite{
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:50px;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .just-form {
+        margin: 30px; 
+    }
+
+    .full-form {
+        width:200px;
+        margin: 8px;
+        padding:20px;
+        font-size:20px;
+    }
+    .fields-style{
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+
+    }
+
+    .label-style {
+        width: 130px;
+        font-size:15px;
+        margin-right:0px;
+        margin-left: 0px;
+        justify-content: flex-start;
+        
+    }
+
+    .input-style {
+        width: 120px;
+        font-size:12px;
+        margin-left:0px;
+        margin-right:0px;
+       
+    }
+    .design-container{
+        background-image: url("https://images5.alphacoders.com/134/1347174.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%vw; 
+        height: 100vh; 
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+
+    .elite{
+       
+        font-size: 35px;
+        
+    }
+    .select-input{
+        height:35px;
+        width:150px;
+        background-color:#e1e7f0;
+    }
+    .enquiry-btn{
+        margin-top:15px;
+        
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:12px;
+
+    }
+    .submit-btn{
+        background-color: #e31b2c;
+        color:white;
+        font-size:12px;
+        text-align: center;
+        border-radius: 10px;
+        height:35px;
+        padding:10px;
+
+    }
+
+}
+
+/******************************design_studio*****************************************/
+
+.main-container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin:50px;
+}
+.side-heading{
+    color:black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.each-rows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.images {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-right: 10px;
+    height: 300px; 
+}
+
+.images:last-child {
+    margin-right: 0; 
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+
+
+
+/* Additional mobile styles for image grid */
+@media screen and (max-width: 768px) {
+    .main-container {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .images {
+        flex: 0 0 calc(50% - 10px); /* Adjust width for two images per row */
+        margin-bottom: 10px; /* Adjust margin between rows */
+        height: 200px; /* Adjust height as needed */
+    }
+}

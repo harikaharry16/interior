@@ -1,0 +1,130 @@
+<odoo>
+
+
+    <record id="design_studio_views" model="website.menu">
+        <field name="name">Designs Studio</field>
+        <field name="url">/designs studio</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">80</field>
+    </record>
+
+    <template id="designs_studio_form_template" name="designs studio">
+        <t t-call="website.layout">
+            <t t-set="title">Designs Studio</t>
+            <div class="main-container">
+            	<div >
+            		<p class="side-headings">Living Room Interiors</p>
+            	</div>
+            	<div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://media.designcafe.com/wp-content/uploads/2020/03/21012613/luxury-living-room-designs.jpg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://media.architecturaldigest.com/photos/62f3c04c5489dd66d1d538b9/master/pass/_Hall_St_0256_v2.jpeg"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://housebeautiful.cdnds.net/18/06/3200x3200/square-1518192902-shot-01-suffolk-cottage.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+	            <div >
+            		<p class="side-headings">Bedroom Interiors</p>
+            	</div>
+            	<div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://www.nobroker.in/blog/wp-content/uploads/2022/07/Modern-Bedroom-Design.jpg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2022/06/10183457/small-bedroom-ideas.jpg"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://images.woodenstreet.de/image/data%2FLooks%2F3.jpg"  alt="Image 3"/>
+	                </div>
+
+	            </div>
+	            <div >
+            		<p class="side-headings">Modular Kitchen Interiors</p>
+            	</div>
+	            <div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/featured-image-kitchen-layouts.jpg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://i0.wp.com/www.stockcabinetexpress.com/blog/wp-content/uploads/2017/01/designing-L-shaped-kitchen.jpg"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2023/1/kitchen-design-ideas_0_1200.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+	              <div >
+            		<p class="side-headings">Home Office  Interiors</p>
+            	</div>
+	            <div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://st.hzcdn.com/simgs/55811fb10faec957_14-3645/home-design.jpg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://foyr.com/learn/wp-content/uploads/2024/03/Home-Office-Cabinets.webp"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2023/02/Home-office-inspiration-by-Annie-L.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+	            <div >
+            		<p class="side-headings">Wardrobe Interiors</p>
+            	</div>
+	            <div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://zenlayercdn.centuryply.com/blogimage/3-01-24/blog3-3.jpeg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://i.pinimg.com/236x/d0/2f/86/d02f86f834f39aa424bb62062c278d43.jpg"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://i.pinimg.com/736x/1f/0a/38/1f0a3829638becefa149c2ccaa39f5ab.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+	              <div >
+            		<p class="side-headings">Space Saving Furniture</p>
+            	</div>
+	            <div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://media.designcafe.com/wp-content/uploads/2022/12/17175802/A-Colourful-Kids-Room-With-Space-Saving-Furniture.jpg"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://images.summitmedia-digital.com/realliving/resize/images/2022/03/30/space-savers-main.webp"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://images.hindustantimes.com/img/2022/12/28/550x309/pickawood-GN9JhLPw3ow-unsplash_1672219528980_1672219559379_1672219559379.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+	            <div >
+            		<p class="side-headings">Bathroom Interiors</p>
+            	</div>
+	            <div class="each-rows">
+	               	<div class="images">
+	                    <img src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2024-1704560007-SGQ6F/bathroom-1706600392-ukMn7/br20-1709019017-zzlgV.JPG"  alt="Image 1"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://media.designcafe.com/wp-content/uploads/2020/03/21013143/small-bathroom-ideas-with-mirrors.jpg"  alt="Image 2"/>
+	                </div>
+	                <div class="images">
+	                    <img src="https://media.architecturaldigest.com/photos/5d2f3540dea3bc0008636368/master/pass/After-Photo-7.jpg"  alt="Image 3"/>
+	                </div>
+	                
+	            </div>
+
+	                 
+	                
+	        </div>
+	    </t>
+	</template>
+	   
+
+
+	       
+</odoo>
