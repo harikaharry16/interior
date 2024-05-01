@@ -7,7 +7,7 @@
 /*    background-attachment: fixed;*/
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
 
@@ -17,9 +17,7 @@
 .just-form{
     display:flex;
     flex-direction: column;
-
-
-    margin:50px;
+    margin-bottom:80px;
 
     
 }
@@ -32,9 +30,9 @@
     border-radius: 20px;
     padding:10px;
     background-color: white;
-    margin-bottom:20px;
+    margin-bottom:40px;
     margin-top:10px;
-    margin:50px;
+    margin:30px;
    
 }
 
@@ -46,6 +44,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding:0px;
+    margin:0px;
 
 
 }
@@ -65,16 +65,16 @@
     font-size: 15px;
     margin-left:8px;
     margin-right:28px;
+
 }
 .select-input{
     height:35px;
-    width:220px;
+    width:200px;
     background-color:#e1e7f0;
 }
 
 .enquiry-btn{
-    margin-top:45px;
-    
+    margin-top:5px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -91,9 +91,11 @@
 .submit-btn{
     background-color: #e31b2c;
     color:white;
-    border-radius: 5px;
+    border-radius: 10px;
     height:45px;
-    padding:10px;
+    padding:5px;
+    font-size:18px;
+    font-weight: bold;
 
 }
 .successful-msg{
@@ -120,26 +122,31 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    padding-top:50px;
-    font-size: 85px;
+    padding-top:10px;
+    font-size: 65px;
     font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
     .just-form {
-        margin: 30px; 
+        margin-bottom: 80px; 
     }
 
     .full-form {
         width:200px;
-        margin: 8px;
-        padding:20px;
+        margin: 2px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom: 2px;
         font-size:20px;
     }
     .fields-style{
         display: flex;
         flex-direction: column;
-        justify-content: normal;
+        margin-bottom:0px;
+        padding:0px;
+        
+/*        justify-content: normal;*/
 
     }
 
@@ -153,10 +160,11 @@
     }
 
     .input-style {
-        width: 120px;
+        width: 80px;
         font-size:12px;
         margin-left:0px;
         margin-right:0px;
+
        
     }
     .design-container{
@@ -168,10 +176,8 @@
     
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-
-
 
     }
 
@@ -183,11 +189,11 @@
     }
     .select-input{
         height:35px;
-        width:150px;
+        width:160px;
         background-color:#e1e7f0;
     }
     .enquiry-btn{
-        margin-top:15px;
+        margin-top:10px;
         
         display:flex;
         flex-direction: row;
@@ -198,11 +204,12 @@
     .submit-btn{
         background-color: #e31b2c;
         color:white;
-        font-size:12px;
+        font-size:15px;
+        font-weight: bold;
         text-align: center;
         border-radius: 10px;
         height:35px;
-        padding:10px;
+        padding-bottom:10px;
 
     }
 
